@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proposta Comercial</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap">
+  <style>
+    /* Estilos gerais do documento */
+    body {
+      font-family: "Poppins", sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Estilos do cabeçalho */
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    /* Estilos do container de informações */
+    .info-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 2px solid #007BFF;
+      border-radius: 10px;
+    }
+
+    .info-container strong {
+      font-weight: 500;
+    }
+
+    .info-container textarea {
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      resize: vertical;
+    }
+
+    /* Estilos para a seção de upload de imagens */
+    .image-upload {
+      margin: 20px 0;
+    }
+
+    label {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    input[type="file"] {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    button[type="submit"] {
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    /* Estilos para a logo */
+    .logo {
+      max-width: 200px;
+    }
+
+    /* Estilos para o título da seção */
+    .section-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #007BFF;
+      padding-bottom: 5px;
+    }
+
+    /* Estilos para o texto da proposta */
+    .proposta-text {
+      line-height: 1.8;
+    }
+
+    /* Estilos para o rodapé */
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #007BFF;
+      color: #fff;
+    }
+
+    footer p {
+      font-size: 14px;
+      margin: 10px 0;
+    }
+
+    footer p:last-child {
+      margin-bottom: 0;
+    }
+
+    footer p.message {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    footer p.signature {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+
+    footer p.signature span {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    footer p.signature::before {
+      content: '';
+      display: block;
+      border-top: 2px solid #fff;
+      width: 60px;
+      margin: 0 auto 10px;
+    }
+
+    /* Estilos para o elemento <img> */
+    #foto_antes_1_preview img,
+    #foto_antes_2_preview img,
+    #foto_depois_1_preview img,
+    #foto_depois_2_preview img {
+      max-width: 962px;
+      max-height: 754px;
+      width: auto;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Logo da empresa -->
+    <img class="logo" src="logo.jpg" alt="Logo da Sua Empresa">
+    <!-- Título da proposta -->
+    <h1>Proposta Comercial</h1>
+  </header>
+  <div class="info-container">
+    <!-- Informações gerais da proposta -->
+    <p>Prezado [Nome do Cliente],</p>
+    <p>Agradecemos pelo interesse em nossos produtos/serviços. Esta proposta foi elaborada especialmente para atender às necessidades do seu negócio. Por favor, preencha as informações abaixo para personalizarmos a oferta de acordo com as suas demandas:</p>
+    <ol>
+      <!-- Seção 1 - Descrição do Negócio -->
+      <li>
+        <strong>Descrição do Negócio:</strong>
+        <textarea name="descricao_negocio" required></textarea>
+      </li>
+      <!-- Seção 2 - Necessidades e Desafios -->
+      <li>
+        <strong>Necessidades e Desafios:</strong>
+        <textarea name="necessidades_desafios" required></textarea>
+      </li>
+      <!-- Seção 3 - Tipo de Solução Desejada -->
+      <li>
+        <strong>Tipo de Solução Desejada:</strong>
+        <textarea name="tipo_solucao_desejada" required></textarea>
+      </li>
+      <!-- Seção 4 - Prazos e Cronograma -->
+      <li>
+        <strong>Prazos e Cronograma:</strong>
+        <textarea name="prazos_cronograma" required></textarea>
+      </li>
+      <!-- Seção 5 - Orçamento -->
+      <li>
+        <strong>Orçamento:</strong>
+        <textarea name="orcamento"></textarea>
+      </li>
+      <!-- Seção 6 - Outras Observações -->
+      <li>
+        <strong>Outras Observações:</strong>
+        <textarea name="outras_observacoes"></textarea>
+      </li>
+      <!-- Seção 7 - Informações do Cliente -->
+      <li>
+        <strong>Informações do Cliente:</strong>
+        <ul>
+          <li><strong>Nome da Empresa:</strong> Lorem Ipsum Corporation</li>
+          <li><strong>Nome do Contato:</strong> John Doe</li>
+          <li><strong>Cargo:</strong> Gerente de Compras</li>
+          <li><strong>Endereço:</strong> Rua Lorem, 123</li>
+          <li><strong>Cidade:</strong> Ipsumville</li>
+          <li><strong>CEP:</strong> 12345-678</li>
+          <li><strong>Telefone:</strong> (12) 3456-7890</li>
+          <li><strong>E-mail:</strong> john.doe@loremipsum.com</li>
+        </ul>
+      </li>
+<!-- Seção 8 - Sobre o projeto -->
+<li class="image-upload">
+  <strong>Sobre o projeto:</strong>
+  <!-- Texto explicativo -->
+  <p class="proposta-text">Nesta seção, pedimos que você faça o upload de duas fotos que representem o estado atual do seu negócio (antes) e duas fotos ilustrativas de como gostaria que seu negócio ficasse após a implementação de nossos produtos/serviços.</p>
+  <!-- Formulário de upload de fotos -->
+  <form id="upload-form" enctype="multipart/form-data">
+    <label for="foto_antes_1">Foto antes 1:</label>
+    <input type="file" id="foto_antes_1" name="foto_antes_1" accept="image/*" required>
+    <!-- Elemento para exibir a imagem -->
+    <div id="foto_antes_1_preview"></div>
+    <br>
+    <label for="foto_antes_2">Foto antes 2:</label>
+    <input type="file" id="foto_antes_2" name="foto_antes_2" accept="image/*" required>
+    <!-- Elemento para exibir a imagem -->
+    <div id="foto_antes_2_preview"></div>
+    <br>
+    <label for="foto_depois_1">Foto ilustrativa depois 1:</label>
+    <input type="file" id="foto_depois_1" name="foto_depois_1" accept="image/*" required>
+    <!-- Elemento para exibir a imagem -->
+    <div id="foto_depois_1_preview"></div>
+    <br>
+    <label for="foto_depois_2">Foto ilustrativa depois 2:</label>
+    <input type="file" id="foto_depois_2" name="foto_depois_2" accept="image/*" required>
+    <!-- Elemento para exibir a imagem -->
+    <div id="foto_depois_2_preview"></div>
+    <br>
+    <button type="submit">Enviar fotos</button>
+  </form>
+</li>
+<!-- Mais conteúdo da proposta, se necessário -->
+    </ol>
+  </div>
+  <!-- Rodapé -->
+  <footer>
+    <p>Após preencher todas as informações acima, nossa equipe analisará os detalhes do seu negócio e elaborará uma proposta personalizada que atenda às suas necessidades. Estamos comprometidos em fornecer a melhor solução possível para o seu sucesso.</p>
+    <p>Caso tenha alguma dúvida ou precise de mais esclarecimentos, fique à vontade para entrar em contato conosco pelos meios informados acima.</p>
+    <p>Agradecemos a oportunidade de trabalhar com a sua empresa e aguardamos ansiosamente a resposta ao nosso questionário.</p>
+    <p>Atenciosamente,</p>
+  </footer>
+  <script>
+    document.getElementById('upload-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+    
+      function lerEExibirImagem(inputId, previewId) {
+        const input = document.getElementById(inputId);
+        const preview = document.getElementById(previewId);
+        const file = input.files[0];
+    
+        if (file) {
+          const reader = new FileReader();
+    
+          reader.addEventListener('load', function () {
+            preview.innerHTML = `<img src="${reader.result}" alt="Imagem carregada" style="max-width: 962px; max-height: 754px;">`;
+          });
+    
+          reader.readAsDataURL(file);
+        }
+      }
+    
+      lerEExibirImagem('foto_antes_1', 'foto_antes_1_preview');
+      lerEExibirImagem('foto_antes_2', 'foto_antes_2_preview');
+      lerEExibirImagem('foto_depois_1', 'foto_depois_1_preview');
+      lerEExibirImagem('foto_depois_2', 'foto_depois_2_preview');
+    });
+    </script>
+</body>
+</html>
